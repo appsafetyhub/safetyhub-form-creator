@@ -530,10 +530,10 @@ class Image extends React.Component {
     return (
       <div style={{ ...this.props.style, ...style }} className={baseClasses} >
         <ComponentHeader {...this.props} />
-        { this.props.data.src &&
+        {this.props.data.src &&
           <img src={this.props.data.src} width={this.props.data.width} height={this.props.data.height} />
         }
-        { !this.props.data.src &&
+        {!this.props.data.src &&
           <div className="no-image">No Image</div>
         }
       </div>
@@ -631,8 +631,8 @@ class Camera extends React.Component {
     const imgProps = { width: '100%' };
     if (width) {
       imgProps.width = width < window.innerWidth
-      ? width
-      : 0.9 * window.innerWidth;
+        ? width
+        : 0.9 * window.innerWidth;
     }
     if (height) {
       imgProps.height = height;
@@ -661,8 +661,8 @@ class Camera extends React.Component {
         <div className="form-group">
           <ComponentLabel {...this.props} />
           {this.props.read_only === true &&
-          this.props.defaultValue &&
-          this.props.defaultValue.length > 0 ? (
+            this.props.defaultValue &&
+            this.props.defaultValue.length > 0 ? (
             <div>
               <img
                 style={imageStyle}
@@ -779,8 +779,8 @@ class FileUpload extends React.Component {
         <div className="form-group">
           <ComponentLabel {...this.props} />
           {this.props.read_only === true &&
-          this.props.defaultValue &&
-          this.props.defaultValue.length > 0 ? (
+            this.props.defaultValue &&
+            this.props.defaultValue.length > 0 ? (
             <div>
               <button
                 className='btn btn-default'
@@ -818,11 +818,11 @@ class FileUpload extends React.Component {
                     <div style={{ display: 'inline-block', marginLeft: '5px' }}>
                       {this.state.fileUpload.size.length > 6
                         ? `Size:  ${Math.ceil(
-                            this.state.fileUpload.size / (1024 * 1024)
-                          )} mb`
+                          this.state.fileUpload.size / (1024 * 1024)
+                        )} mb`
                         : `Size:  ${Math.ceil(
-                            this.state.fileUpload.size / 1024
-                          )} kb`}
+                          this.state.fileUpload.size / 1024
+                        )} kb`}
                     </div>
                   </div>
                   <br />
@@ -897,7 +897,7 @@ class Range extends React.Component {
     if (this.props.read_only) {
       props.disabled = 'disabled';
     }
-    
+
     let baseClasses = 'SortableItem rfb-item';
     if (this.props.data.pageBreakBefore) { baseClasses += ' alwaysbreak'; }
 

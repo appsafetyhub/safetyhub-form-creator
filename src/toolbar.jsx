@@ -441,13 +441,16 @@ class Toolbar extends React.Component {
     store.dispatch('create', this.create(item));
   }
 
-  renderItem = (item) => (<ToolbarItem data={item} key={item.key} onClick={this._onClick.bind(this, item)} onCreate={this.create} />)
+  renderItem = (item) => (
+    <ToolbarItem data={item} key={item.key} onClick={this._onClick.bind(this, item)} onCreate={this.create} />
+  )
 
   render() {
     const { items, grouped, groupKeys } = buildGroupItems(this.state.items);
     return (
-      <div className="col-md-3 bg-dark py-2 react-form-builder-toolbar float-right rounded mr-4 mt-2">
-        <ul>
+      <div className="react-form-builder-toolbar float-right" style={{ margin: '0', backgroundColor: '#2e303f' }}>
+        <h4>Allowed Fields</h4>
+        <ul style={{ display: 'grid', gridTemplate: 'auto / auto auto auto', padding: '10px' }}>
           {
             items.map(this.renderItem)
           }

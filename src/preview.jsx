@@ -281,7 +281,7 @@ export default class Preview extends React.Component {
         </div>
         <div className="Sortable">{items}</div>
         <PlaceHolder id="form-place-holder" show={items.length === 0} index={items.length} moveCard={this.cardPlaceHolder} insertCard={this.insertCard} />
-        <CustomDragLayer/>
+        <CustomDragLayer />
       </div>
     );
   }
@@ -291,6 +291,6 @@ Preview.defaultProps = {
   files: [],
   editMode: false,
   editElement: null,
-  className: 'col-md-9 react-form-builder-preview float-left',
+  className: 'col-lg-9 react-form-builder-preview float-left',
   renderEditForm: props => <FormElementsEdit {...props} />,
 };

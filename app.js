@@ -98,7 +98,7 @@ const App = () => (
     saveUrl={saveUrl}
     locale='en'
     saveAlways={false}
-    // toolbarItems={items}
+  // toolbarItems={items}
   />);
 
 ReactDOM.render(
@@ -106,7 +106,3 @@ ReactDOM.render(
   document.getElementById('form-builder'),
 );
 
-ReactDOM.render(
-  <DemoBar variables={variables} />,
-  document.getElementById('demo-bar'),
-);
