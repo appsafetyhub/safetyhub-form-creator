@@ -19,11 +19,13 @@
       width: 100%;
       font-weight: bold;
       margin: 5px 0;
-      background: repeating-linear-gradient(45deg,
-          #fff,
-          #fff 10px,
-          #eee 10px,
-          #eee 20px);
+      background: repeating-linear-gradient(
+        45deg,
+        #fff,
+        #fff 10px,
+        #eee 10px,
+        #eee 20px
+      );
     }
 
     label {
@@ -67,7 +69,7 @@
       height: 100%;
       // width: 0;
       width: 715px;
-      transition: .5s;
+      transition: 0.5s;
       overflow-y: auto;
 
       h4,
@@ -149,7 +151,7 @@
     }
 
     .Sortable {
-      transition: opacity .25s ease-in;
+      transition: opacity 0.25s ease-in;
       position: relative;
       cursor: move;
       -webkit-touch-callout: none;
@@ -175,7 +177,7 @@
               cursor: move;
             }
 
-            input[type='date'] {
+            input[type="date"] {
               height: 42px;
             }
 
@@ -208,7 +210,7 @@
         &.is-placeholder {
           display: block;
           z-index: auto;
-          opacity: .4;
+          opacity: 0.4;
           border: 2px dashed #ff6816;
           border-radius: 10px;
         }
@@ -248,7 +250,6 @@
     }
 
     &.is-editing {
-
       // .Sortable {
       //   opacity: .5;
       //   transition: opacity .25s ease-in;
@@ -259,7 +260,7 @@
         box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.1);
         // width: 80%;
         left: 0;
-        transition: .5s;
+        transition: 0.5s;
       }
     }
   }
@@ -351,7 +352,7 @@
   padding: 10px;
 }
 
-@media (max-width: $screen-sm-min ) {
+@media (max-width: $screen-sm-min) {
   .react-form-builder {
     position: relative;
 
@@ -385,27 +386,11 @@
     }
 
     .react-form-builder-toolbar {
-
       h4 {
         padding: 10px;
         color: #88889e;
         text-align: center;
       }
-
-      width: 100%;
-      // position: fixed;
-      z-index: 900;
-      bottom: -320px;
-
-      -webkit-transition: transform 0.5s;
-      transition: transform 0.5s;
-
-      -webkit-transform: translate(0, 0);
-      transform: translate(0, 0);
-
-      right: 0;
-      border-top: 2px solid #ccc;
-
 
       ul {
         height: 300px;
@@ -493,7 +478,7 @@
   padding: 25px;
   text-align: center;
   font: 20pt bold, "Vollkorn";
-  color: #bbb
+  color: #bbb;
 }
 
 .form-place-holder-hidden {

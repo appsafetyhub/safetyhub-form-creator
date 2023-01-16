@@ -1,6 +1,6 @@
 {
   "name": "@appsafetyhub/safetyhub-form-creator",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "SafetyHub Form Creator.",
   "main": "lib/index.js",
   "types": "types/index.d.ts",
